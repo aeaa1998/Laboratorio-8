@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/recyclerRow">
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="70dp"
+                android:id="@+id/CardViewRow"
+                card_view:cardBackgroundColor="@android:color/darker_gray"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+        >
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                    <TextView
+                            android:id="@+id/name_producr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Set Name"
+                            android:textSize="24sp"
+                    />
+                    <TextView
+                            android:id="@+id/quantity_product"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="set Q"
+                            android:textSize="18sp"
+                    />
+                </LinearLayout>
+                <Button
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="+"
+                        android:id="@+id/plus_quantity"
+                />
+                <Button
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="-"
+                        android:id="@+id/minus_quantity"
+                />
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</layout>
