@@ -18,8 +18,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.partners.laboratorio7.Adapters.ViewHolder.CustomViewHolder
 import com.partners.laboratorio7.App.Companion.indexInventary
-import com.partners.laboratorio7.Models.Inventary
-import com.partners.laboratorio7.Models.Row
 import com.partners.laboratorio7.R
 import com.partners.laboratorio7.database.AppDatabase
 import com.partners.laboratorio7.database.InventaryDb

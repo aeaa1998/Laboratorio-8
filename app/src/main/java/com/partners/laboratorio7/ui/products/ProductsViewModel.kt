@@ -3,9 +3,6 @@ package com.partners.laboratorio7.ui.products
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.partners.laboratorio7.Models.Inventary
-import com.partners.laboratorio7.Models.Product
-import com.partners.laboratorio7.Models.Row
 import com.partners.laboratorio7.database.AppDao
 import com.partners.laboratorio7.database.Products
 
@@ -39,10 +36,7 @@ class ProductsViewModel(
         database.insertProduct(p)
         _products.value?.add(p)
     }
-    fun hasCode(r: Product): Boolean{
-        val check = database.checkCodeExists(r.codigo)
-        return check == null
-    }
+
     fun hasCodeString(code: String): Boolean{
         val check = database.checkCodeExists(code)
         return check == null

@@ -11,8 +11,6 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.NavHostFragment
-import com.partners.laboratorio7.Models.Inventary
-import com.partners.laboratorio7.Models.Product
 import com.partners.laboratorio7.database.AppDatabase
 import com.partners.laboratorio7.database.Products
 import com.partners.laboratorio7.ui.inventories.InventoriesViewModel

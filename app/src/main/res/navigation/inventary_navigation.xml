@@ -11,17 +11,17 @@
               android:name="com.partners.laboratorio7.ui.inventories.InventoriesFragment"
               android:label="inventories_fragment" tools:layout="@layout/inventories_fragment">
         <action
-                app:destination="@+id/singleInventaryFragment" app:enterAnim="@anim/nav_default_enter_anim"/>
+                app:destination="@+id/singleInventaryFragment" app:enterAnim="@anim/nav_default_enter_anim"
+                android:id="@+id/actionInventoriesFragmentToSingleInventaryFragment"/>
         <action android:id="@+id/action_inventories_fragment_to_create_inventary"
                 app:destination="@id/create_inventary"/>
-        <action
-                app:destination="@id/products_fragment" app:launchSingleTop="true" app:popUpToInclusive="true"/>
         <argument android:name="selected" app:argType="integer"/>
     </fragment>
     <fragment android:id="@+id/singleInventaryFragment" android:name="com.partners.laboratorio7.singleInventaryFragment"
               android:label="single_inventary_fragment" tools:layout="@layout/single_inventary_fragment">
         <action
-                app:destination="@+id/scanCodeFragment" app:enterAnim="@anim/nav_default_enter_anim"/>
+                app:destination="@+id/scanCodeFragment" app:enterAnim="@anim/nav_default_enter_anim"
+                android:id="@+id/actionSingleInventaryFragmentToScanCodeFragment"/>
         <argument android:name="selectedInventary" app:argType="integer"/>
     </fragment>
     <fragment android:id="@+id/create_inventary" android:name="com.partners.laboratorio7.create_inventary"

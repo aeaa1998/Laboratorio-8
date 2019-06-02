@@ -10,8 +10,6 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.NavHostFragment
 import com.google.zxing.Result
 import com.partners.laboratorio7.App.Companion.indexInventary
-import com.partners.laboratorio7.Models.Product
-import com.partners.laboratorio7.Models.Row
 import com.partners.laboratorio7.database.AppDatabase
 import com.partners.laboratorio7.ui.inventories.InventoriesViewModel
 import com.partners.laboratorio7.ui.inventories.InventoriesViewModelFactory
